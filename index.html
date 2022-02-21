@@ -44,7 +44,7 @@
     function deleteResult( key ){
         allResult.slice(key , 1);
 
-        const datafiltered = allResult.filtler((e, i )=> i != key);
+        const datafiltered = allResult.filter((e, i )=> i != key);
         localStorage.setItem("allResult", JSON.stringify(datafiltered));
         allResult = datafiltered ;
         // showData();
